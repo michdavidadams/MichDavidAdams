@@ -2,24 +2,24 @@
 
 ## Social
 
-[Twitter](<https://twitter.com/michdavidadams>)
+[Twitter](<https://twitter.com/michdavidadams>) 🐦
 
-[TikTok](<https://www.tiktok.com/@michaeldavidadams>)
+[TikTok](<https://www.tiktok.com/@michaeldavidadams>) 📹
 
-[Telegram](<https://t.me/michdavidadams>)
+[Telegram](<https://t.me/michdavidadams>) 💬
 
-[Snapchat](<https://www.snapchat.com/add/michaeldadams>)
+[Snapchat](<https://www.snapchat.com/add/michaeldadams>) 👻
 
-Discord: michdavidadams#1121
+Discord: michdavidadams#1121 👾
 
 
 
 ## Gaming
 
-Game Center: michdavidadams@icloud.com
+Game Center: michdavidadams@icloud.com 📱
 
-Dead by Daylight: Ruh Roh #5c3e
+Dead by Daylight: Ruh Roh #5c3e ☠️
 
-[Steam](<https://steamcommunity.com/id/michdavidadams/>)
+[Steam](<https://steamcommunity.com/id/michdavidadams/>) 💻
 
-Switch: SW-1704-8865-9977
+Switch: SW-1704-8865-9977 🕹️
