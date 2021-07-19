@@ -1,3 +1,5 @@
 theme: jekyll-theme-minimal
 title: Michael David Adams
 description: This is a personal site used for myself and nosy people.
+logo: /assets/michael.jpeg
+show_downloads: false
