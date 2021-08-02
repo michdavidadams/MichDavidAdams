@@ -1,2 +1,3 @@
-[Blog](</_posts>) 📝
+[Blog](</_posts>) 📝  
+
 [Links](</links.html>) 🔗
