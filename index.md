@@ -3,6 +3,7 @@
 [Links](</links.html>) 🔗
 
 <html>
+  <body>
 <ul>
   {% for post in site.posts %}
     <li>
@@ -11,4 +12,5 @@
     </li>
   {% endfor %}
 </ul>
+  </body>
 </html>
