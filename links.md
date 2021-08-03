@@ -6,7 +6,8 @@
 
 [TikTok](<https://www.tiktok.com/@michaeldavidadams>) 📹
 
-| [Snapchat](<https://www.snapchat.com/add/michaeldadams>) 👻 | ![Snapchat code](/assets/snapchat.JPG){:height="50%" width="50%"} |
+[Snapchat](<https://www.snapchat.com/add/michaeldadams>) 👻
+![Snapchat code](/assets/snapchat.JPG){:height="20%" width="20%"}
 
 Discord: michdavidadams#1121 👾
 
