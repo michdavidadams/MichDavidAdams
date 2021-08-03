@@ -6,12 +6,10 @@
 
 [TikTok](<https://www.tiktok.com/@michaeldavidadams>) 📹
 
-[Telegram](<https://t.me/michdavidadams>) 💬
-
 [Snapchat](<https://www.snapchat.com/add/michaeldadams>) 👻
+![Snapchat code](/assets/snapchat.JPG)
 
 Discord: michdavidadams#1121 👾
-
 
 
 ## Gaming
@@ -23,3 +21,8 @@ Dead by Daylight: Ruh Roh #5c3e ☠️
 [Steam](<https://steamcommunity.com/id/michdavidadams/>) 💻
 
 Switch: SW-1704-8865-9977 🕹️
+
+
+## Etc
+
+[Apple Music](<https://music.apple.com/profile/michdavidadams>) 🎵
