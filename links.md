@@ -1,5 +1,5 @@
 # Links
-
+---
 ## Social
 
 [Twitter](<https://twitter.com/michdavidadams>) 🐦
@@ -11,7 +11,7 @@
 ![Snapchat code](/assets/snapchat.JPG){:height="20%" width="20%"}
 
 Discord: michdavidadams#1121 👾
-
+---
 
 ## Gaming
 
@@ -22,7 +22,7 @@ Dead by Daylight: Ruh Roh #5c3e ☠️
 [Steam](<https://steamcommunity.com/id/michdavidadams/>) 💻
 
 Switch: SW-1704-8865-9977 🕹️
-
+---
 
 ## Etc
 
