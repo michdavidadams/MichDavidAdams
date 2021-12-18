@@ -8,7 +8,7 @@ tag: shortcuts
 ![Numbers file](/assets/shortcuts/Journal/numbersfile.jpeg)
 
 2. Make a new shorcut.
-![Format date](/assets/shortcuts/Journal/formatdates.png)
+![Format date](/assets/shortcuts/Journal/formatdates.jpeg)
 ![Ask for input and output to numbers](/assets/shortcuts/Journal/askthenoutput.jpeg)
 
 3. The shortcut will output whatever you wrote into the table of the current month.
