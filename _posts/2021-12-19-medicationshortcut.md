@@ -5,7 +5,7 @@ author: Michael
 tag: shortcuts
 ---
 
-## These are the shortcuts I use for medication tracking.
+### These are the shortcuts I use for medication tracking.
 
 Previously I had been using Reminders to remember to take my meds, but I found that to be unreliable due to bugs and unhelpful for as-needed meds.
 
