@@ -1,6 +1,6 @@
 # Michael David Adams
 ![Michael](/assets/michael.png)
-### Computer science student at KSU. Cancer survivor.
+Associate degree in computer science from GHC. Computer science student at KSU. Cancer survivor.
 
 [Links](</links.html>) 🔗    [Blog](</blog.html>) 📝
  
@@ -9,7 +9,6 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Michael David Adams</title>
 </head>
 <body style="background-color:#adb5bd">
 </body>
