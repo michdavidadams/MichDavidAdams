@@ -1,6 +1,6 @@
 # Michael David Adams
-### Computer science student at KSU. Cancer survivor.
 ![Michael](/assets/michael.png)
+### Computer science student at KSU. Cancer survivor.
 
 [Links](</links.html>) 🔗    [Blog](</blog.html>) 📝
  
