@@ -1,5 +1,3 @@
-<div align="center">
-
 # Michael David Adams
 ![Michael](/assets/michael.png)
 
