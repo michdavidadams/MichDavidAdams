@@ -5,3 +5,4 @@ show_downloads: false
 page_excerpts: true
 plugins:
   - jemoji
+  - jekyll-remote-theme
