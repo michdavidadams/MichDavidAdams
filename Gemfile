@@ -6,5 +6,8 @@ gem 'jekyll'
 
 gem 'jemoji'
 
-# gem "rails"
+gem "rails"
+
+gem "jekyll-theme-minimal"
+
 gem "github-pages", "~> 215", group: :jekyll_plugins
