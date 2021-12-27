@@ -17,7 +17,7 @@ Discord: michdavidadams#1121  👾
 
 Switch: SW-1704-8865-9977  🕹️
 
-Dead by Daylight: Ruh Roh #5c3e  ☠️
+Dead by Daylight: RvhRoh #5c3e  ☠️
 
 
 ## Etc
