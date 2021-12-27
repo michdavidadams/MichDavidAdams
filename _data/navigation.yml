@@ -1,0 +1,5 @@
+main:
+ - title: "Links"
+   url: /_pages/links/
+ - title: "Posts"
+   url: /_pages/year-archive/

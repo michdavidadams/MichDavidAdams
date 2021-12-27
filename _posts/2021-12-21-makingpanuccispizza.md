@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Making Panucci's Pizza"
 author: Michael
 tag: apps

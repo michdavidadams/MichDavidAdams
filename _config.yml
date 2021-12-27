@@ -1,7 +1,55 @@
 title: Michael David Adams
-description: "Student at KSU, with an associate degree in computer science from GHC. Interested in app development."
-logo: /assets/michael.jpeg
 show_downloads: false
 page_excerpts: true
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "air"
+
+# Site Settings
+description: "Associate degree in computer science from GHC. Computer science student at KSU. Cancer survivor."
+logo: /assets/michael.png
+title: "Michael David Adams"
+name: "Michael David Adams"
+url: https://michdavidadams.github.io
+baseurl: "/michdavidadams.github.io"
+
+# Defaults
+defaults:
+    # _posts
+    -   scope:
+            path: ""
+            type: posts
+        values:
+            layout: single
+            author_profile: true
+            show_date: true
+    # _pages:
+    -   scope:
+            path: "_pages"
+            type: _pages
+        values:
+            layout: single
+            author_profile: true
+        
+author:
+    name: "Michael David Adams"
+    avatar: "/assets/michael.png"
+    bio: "Associate degree in computer science from GHC. Computer science student at KSU. Cancer survivor."
+    location: "Rome, GA"
+    links:
+        - label: "Github"
+          icon: "fab fa-fw fa-github"
+          url: "https://github.com/michdavidadams"
+        - label: "Instagram"
+          icon: "fab fa-fw fa-instagram"
+          url: "https://instagram.com/michdavidadams"
+        - label: "Twitter"
+          icon: "fab fa-fw fa-twitter"
+          url: "https://twitter.com/michdavidadams"
+          
+# Reading Files
+include:
+ - _pages
+
 plugins:
   - jemoji
+  - jekyll-include-cache

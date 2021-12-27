@@ -6,6 +6,8 @@ gem 'jekyll'
 
 gem 'jemoji'
 
-gem "rails"
+gem "minimal-mistakes-jekyll"
+
+gem "jekyll-include-cache"
 
 gem "github-pages", "~> 215", group: :jekyll_plugins

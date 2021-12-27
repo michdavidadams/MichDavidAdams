@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Medication Shortcuts"
 author: Michael
 tag: shortcuts

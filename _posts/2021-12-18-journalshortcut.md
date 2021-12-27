@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "Journal Shortcut"
 author: Michael
 tag: shortcuts

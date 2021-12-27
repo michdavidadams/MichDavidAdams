@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/michdavidadams.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/michdavidadams.github.io/" rel="alternate" type="text/html" /><updated>2021-12-27T18:36:43-05:00</updated><id>http://localhost:4000/michdavidadams.github.io/feed.xml</id><title type="html">Michael David Adams</title><subtitle>Associate degree in computer science from GHC. Computer science student at KSU. Cancer survivor.</subtitle><author><name>Michael David Adams</name></author><entry><title type="html">Making Panucci’s Pizza</title><link href="http://localhost:4000/michdavidadams.github.io/2021/12/21/makingpanuccispizza.html" rel="alternate" type="text/html" title="Making Panucci’s Pizza" /><published>2021-12-21T00:00:00-05:00</published><updated>2021-12-21T00:00:00-05:00</updated><id>http://localhost:4000/michdavidadams.github.io/2021/12/21/makingpanuccispizza</id><content type="html" xml:base="http://localhost:4000/michdavidadams.github.io/2021/12/21/makingpanuccispizza.html">&lt;h3 id=&quot;my-intro-to-software-engineering-class-had-a-pizza-project&quot;&gt;My Intro to Software Engineering class had a pizza project.&lt;/h3&gt;
+
+&lt;p&gt;We’ve only taken 2 previous classes involving programming, and they were both beginner Java classes. I’ve done some SwiftUI before and decided to just use that to make the app because it is what I felt most comfortable using. It took me a week or two to build a pretty rough app.
+&lt;img src=&quot;/assets/shortcuts/panuccispizza/loginfirst.jpeg&quot; alt=&quot;Login First&quot; /&gt;
+&lt;img src=&quot;/assets/shortcuts/panuccispizza/menufirst.jpeg&quot; alt=&quot;Menu First&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Playing around with the UI was the fun and easier part. I mostly struggled with the Pizza, Drinks, and Sides structs. They were all pretty similar:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public struct Pizza: Identifiable {
+    let name: String
+    let price: Int
+    let description: String
+    let image: String
+    public let id = UUID()
+    
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;And for the menu data, I just created arrays of each food struct:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;let allPizzas = [
+    Pizza(name: &quot;Cheese Pizza&quot;, price: 6, description: &quot;Our signature three-cheese pizza. Perfect for picky eaters, children's parties, and people who enjoy vanilla ice cream.&quot;, image: &quot;front-view-pizza-with-cheese-brown-round-wooden-desk-dark-surface&quot;),
+    Pizza(name: &quot;Veggie Lover's Pizza&quot;, price: 7, description: &quot;A must-have for people too sophisticated for bland cheese pizza. Instead, sink your teeth into the delectable slimy olives with the mushy tomatoes.&quot;, image: &quot;top-view-mixed-pizza-with-tomato-black-olive-melted-cheese&quot;),
+    Pizza(name: &quot;Veggie Hater's Pizza&quot;, price: 7, description: &quot;In the mood for something with lots of meat and no greens? Look no further!&quot;, image: &quot;top-view-salami-pizza-with-cheese-pepperoni-wooden-table&quot;)
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This worked fine just for presenting the data, but became problematic when I needed to store and edit the customer order. I started off just appending the name to a string and updating the total.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public class Order {
+    var foodItem: String
+    var orderTotal: Int
+    var payWithCash: Bool
+    var pickup: Bool
+    public let id = UUID()
+    
+    init(foodItem: String, orderTotal: Int, payWithCash: Bool, pickup: Bool) {
+        self.foodItem = foodItem
+        self.orderTotal = orderTotal
+        self.payWithCash = payWithCash
+        self.pickup = pickup
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This was terrible. It really showed how sloppy my coding had been and was too difficult to edit and present in the checkout screen.&lt;/p&gt;
+
+&lt;p&gt;I instead tried making all food items (Pizza, Drinks, Sides) into 1 struct. I quickly realized my mistake, as there aren’t different sizes for the sides. Instead, I created an OrderItem struct:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;public struct OrderItem: Identifiable, Hashable {
+    var type: FoodType
+    var price: Int
+    var details: String
+    public let id = UUID()
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Whenever a customer added an item to their order, it would create a new OrderItem. This also solved my issue with the custom pizzas. I could just make a string to present on the checkout screen instead of having to deal with different variables for different food types.&lt;/p&gt;
+
+&lt;h2 id=&quot;heres-the-final-project&quot;&gt;Here’s the final project.&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/shortcuts/panuccispizza/loginfinal.png&quot; alt=&quot;Login Final&quot; /&gt;
+&lt;img src=&quot;/assets/shortcuts/panuccispizza/custompizza.png&quot; alt=&quot;Custom pizza&quot; /&gt;
+&lt;img src=&quot;/assets/shortcuts/panuccispizza/pizza.png&quot; alt=&quot;Pizza&quot; /&gt;
+&lt;img src=&quot;/assets/shortcuts/panuccispizza/sides.png&quot; alt=&quot;Sides&quot; /&gt;
+&lt;img src=&quot;/assets/shortcuts/panuccispizza/drinks.png&quot; alt=&quot;Drinks&quot; /&gt;
+&lt;img src=&quot;/assets/shortcuts/panuccispizza/checkout.png&quot; alt=&quot;Checkout&quot; /&gt;
+&lt;img src=&quot;/assets/shortcuts/panuccispizza/submitted.png&quot; alt=&quot;Order submitted&quot; /&gt;
+&lt;img src=&quot;/assets/shortcuts/panuccispizza/attributions.png&quot; alt=&quot;Attributions&quot; /&gt;&lt;/p&gt;</content><author><name>Michael</name></author><category term="apps" /><summary type="html">My Intro to Software Engineering class had a pizza project.</summary></entry><entry><title type="html">Medication Shortcuts</title><link href="http://localhost:4000/michdavidadams.github.io/2021/12/19/medicationshortcut.html" rel="alternate" type="text/html" title="Medication Shortcuts" /><published>2021-12-19T00:00:00-05:00</published><updated>2021-12-19T00:00:00-05:00</updated><id>http://localhost:4000/michdavidadams.github.io/2021/12/19/medicationshortcut</id><content type="html" xml:base="http://localhost:4000/michdavidadams.github.io/2021/12/19/medicationshortcut.html">&lt;h3 id=&quot;these-are-the-shortcuts-i-use-for-medication-tracking&quot;&gt;These are the shortcuts I use for medication tracking.&lt;/h3&gt;
+
+&lt;p&gt;Previously I had been using Reminders to remember to take my meds, but I found that to be unreliable due to bugs and unhelpful for as-needed meds.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make a Reminders list and add your meds. 
+&lt;img src=&quot;/assets/shortcuts/Medications/reminderslist.jpeg&quot; alt=&quot;Reminders list&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create a calendar for your meds.
+&lt;img src=&quot;/assets/shortcuts/Medications/medicationscalendar.jpeg&quot; alt=&quot;Meds calendar&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Make a .json file and save it to the Shortcuts folder in iCloud Drive. Make it in this format:
+    &lt;blockquote&gt;
+      &lt;p&gt;{“Levothyroxine”:20,”Lyrica”:6}&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;For meds taken once daily, add these actions:
+&lt;img src=&quot;/assets/shortcuts/Medications/findcalevents.jpeg&quot; alt=&quot;Find cal event&quot; /&gt;
+&lt;img src=&quot;/assets/shortcuts/Medications/otherwiseaddtocal.jpeg&quot; alt=&quot;Otherwise add to cal&quot; /&gt;
+&lt;img src=&quot;/assets/shortcuts/Medications/findallreminders.jpeg&quot; alt=&quot;Find all reminders&quot; /&gt;
+&lt;img src=&quot;/assets/shortcuts/Medications/getcount.jpeg&quot; alt=&quot;Get count&quot; /&gt;
+&lt;img src=&quot;/assets/shortcuts/Medications/save.jpeg&quot; alt=&quot;Save&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Now, when you go to take the medication, run the shortcut and it will complete the reminder, add it to the calendar, and decrease the med quantity you have left.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can also download the shortcut &lt;a href=&quot;https://www.icloud.com/shortcuts/7c010f7437954b1dbddc8605b4fb242a&quot;&gt;here.&lt;/a&gt;&lt;/p&gt;</content><author><name>Michael</name></author><category term="shortcuts" /><summary type="html">These are the shortcuts I use for medication tracking.</summary></entry><entry><title type="html">Journal Shortcut</title><link href="http://localhost:4000/michdavidadams.github.io/2021/12/18/journalshortcut.html" rel="alternate" type="text/html" title="Journal Shortcut" /><published>2021-12-18T00:00:00-05:00</published><updated>2021-12-18T00:00:00-05:00</updated><id>http://localhost:4000/michdavidadams.github.io/2021/12/18/journalshortcut</id><content type="html" xml:base="http://localhost:4000/michdavidadams.github.io/2021/12/18/journalshortcut.html">&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make a numbers spreadsheet. Each year gets its own sheet and each month gets its own table.
+&lt;img src=&quot;/assets/shortcuts/Journal/numbersfile.jpeg&quot; alt=&quot;Numbers file&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make a new shorcut.
+&lt;img src=&quot;/assets/shortcuts/Journal/formatdates.jpeg&quot; alt=&quot;Format date&quot; /&gt;
+&lt;img src=&quot;/assets/shortcuts/Journal/askthenoutput.jpeg&quot; alt=&quot;Ask for input and output to numbers&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The shortcut will output whatever you wrote into the table of the current month.
+&lt;img src=&quot;/assets/shortcuts/Journal/numbersfileupdated.jpeg&quot; alt=&quot;Numbers file updated&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;You can set an automation to run at specific times, when Wind Down begins, when you arrive home, etc.
+&lt;img src=&quot;/assets/shortcuts/Journal/automation.jpeg&quot; alt=&quot;Automation&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;In the automation, just make it run a shortcut.
+&lt;img src=&quot;/assets/shortcuts/Journal/runshortcut.jpeg&quot; alt=&quot;Run shortcut&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can also download the shortcut &lt;a href=&quot;https://www.icloud.com/shortcuts/8fcb3f11dc164e70815e80b646c485f7&quot;&gt;here.&lt;/a&gt;&lt;/p&gt;</content><author><name>Michael</name></author><category term="shortcuts" /><summary type="html">Make a numbers spreadsheet. Each year gets its own sheet and each month gets its own table.</summary></entry><entry><title type="html">Meddie</title><link href="http://localhost:4000/michdavidadams.github.io/2021/08/01/meddie.html" rel="alternate" type="text/html" title="Meddie" /><published>2021-08-01T00:00:00-04:00</published><updated>2021-08-01T00:00:00-04:00</updated><id>http://localhost:4000/michdavidadams.github.io/2021/08/01/meddie</id><content type="html" xml:base="http://localhost:4000/michdavidadams.github.io/2021/08/01/meddie.html">&lt;p&gt;My first time building an app was in 2019. I didn’t get very far, but it was fun building as much as I could before I simply needed to shelve it for later. I was building it using SwiftUI and I had only completed a single programming class (intro to Java). So, it’s not like I was expecting to actually get very far into completing the app.&lt;/p&gt;
+
+&lt;p&gt;The idea of the app was to simply be a better version of its’ competitors, specifically including support for Siri Shortcuts, Apple Watch complications, and a clean UI. It seemed like all of the medication tracking apps on the App Store didn’t have what I really needed. There’s a food tracking app, FoodNoms, and I wanted it to have a very similar Apple-like design.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/meddie/meddieEarly.jpeg&quot; alt=&quot;Early version of Meddie&quot; /&gt;
+&lt;img src=&quot;/assets/meddie/meddieLater.jpeg&quot; alt=&quot;Later version of Meddie&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I quickly ran into many issues. A major one being the lack of documentation. Another one being my lack of experience. I was only going off of tutorials, and if I couldn’t find a tutorial for what I wanted, I’d do a workaround to get what I wanted. I wasn’t making what I had in mind. It’s like wanting to make a chocolate cake, but only having strawberry-flavored ingredients. You can try figuring something out, or you can wait until you have more appropriate ingredients.&lt;/p&gt;
+
+&lt;p&gt;In my case, I can wait until I have better experience. I’ll work on easier apps now (like a dog clicker app for my Apple Watch) and then come back to it eventually. I don’t need to rush into it. I also somehow lost the code for the app, so all I have are the screenshots above. And the icons my brother and I had made for it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/meddie/meddie_icon-whitefill.png&quot; alt=&quot;App icon&quot; /&gt; &lt;img src=&quot;/assets/meddie/meddie_icon-grey.png&quot; alt=&quot;Another app icon&quot; /&gt; &lt;img src=&quot;/assets/meddie/meddie_icon_old.png&quot; alt=&quot;More lifelike pill bottle icon&quot; /&gt; &lt;img src=&quot;/assets/meddie/meddie_icon-new.png&quot; alt=&quot;App icon but happy&quot; /&gt;&lt;/p&gt;</content><author><name>Michael</name></author><category term="apps" /><summary type="html">My first time building an app was in 2019. I didn’t get very far, but it was fun building as much as I could before I simply needed to shelve it for later. I was building it using SwiftUI and I had only completed a single programming class (intro to Java). So, it’s not like I was expecting to actually get very far into completing the app.</summary></entry></feed>
