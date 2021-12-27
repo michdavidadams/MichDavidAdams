@@ -7,11 +7,3 @@ Associate degree in computer science from GHC. Computer science student at KSU. 
  ---
  
 [![GitHub Streak](https://githubstreakstats.herokuapp.com/?user=michdavidadams&theme=prussian)](https://git.io/streak-stats)
-
-<html lang="en">
-<head>
-<meta charset="utf-8">
-</head>
-<body style="background-color:#adb5bd">
-</body>
-</html>
