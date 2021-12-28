@@ -51,5 +51,4 @@ include:
  - _pages
 
 plugins:
-  - jemoji
   - jekyll-include-cache
