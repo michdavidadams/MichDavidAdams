@@ -1,4 +1,5 @@
 ---
+layout: single
 title:  "Making Panucci's Pizza"
 author: Michael
 tag: apps

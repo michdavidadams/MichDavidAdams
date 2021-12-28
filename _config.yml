@@ -1,7 +1,7 @@
 title: Michael David Adams
 show_downloads: false
 page_excerpts: true
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+theme: "minimal-mistakes-jekyll"
 minimal_mistakes_skin: "air"
 
 # Site Settings
@@ -10,7 +10,7 @@ logo: /assets/michael.png
 title: "Michael David Adams"
 name: "Michael David Adams"
 url: https://michdavidadams.com
-baseurl: "/michdavidadams.com"
+baseurl: "/michdavidadams.github.io"
 
 # Defaults
 defaults:

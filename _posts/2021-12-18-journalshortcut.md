@@ -1,4 +1,5 @@
 ---
+layout: single
 title:  "Journal Shortcut"
 author: Michael
 tag: shortcuts
