@@ -1,7 +1,7 @@
 title: Michael David Adams
 show_downloads: false
 page_excerpts: true
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "air"
 
 # Site Settings
