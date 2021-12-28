@@ -9,8 +9,8 @@ description: "Associate degree in computer science from GHC. Computer science st
 logo: /assets/michael.png
 title: "Michael David Adams"
 name: "Michael David Adams"
-url: https://michdavidadams.github.io
-baseurl: "/michdavidadams.github.io"
+url: https://michdavidadams.com
+baseurl: "/michdavidadams.com"
 
 # Defaults
 defaults:
