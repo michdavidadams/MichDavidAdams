@@ -3,7 +3,8 @@ show_downloads: false
 page_excerpts: true
 theme: "minimal-mistakes-jekyll"
 minimal_mistakes_skin: "air"
-
+atom_feed:
+  hide: true
 # Site Settings
 description: "Associate degree in computer science from GHC. Computer science student at KSU. Cancer survivor."
 logo: /assets/logo.svg
