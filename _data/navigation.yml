@@ -1,4 +1,6 @@
 main:
+ - title: "Projects"
+   url: /_pages/portfolio/
  - title: "Links"
    url: /_pages/links/
  - title: "Posts"
