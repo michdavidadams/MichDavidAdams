@@ -3,7 +3,5 @@ main:
    url: /_pages/home/
  - title: "Portfolio"
    url: /_pages/portfolio/
- - title: "Links"
-   url: /_pages/links/
  - title: "Posts"
    url: /_pages/year-archive/
