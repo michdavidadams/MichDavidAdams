@@ -1,5 +1,7 @@
 main:
- - title: "Projects"
+ - title: "Home"
+   url: /_pages/home/
+ - title: "Portfolio"
    url: /_pages/portfolio/
  - title: "Links"
    url: /_pages/links/

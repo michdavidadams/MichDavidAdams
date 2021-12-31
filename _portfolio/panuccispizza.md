@@ -1,8 +1,10 @@
 ---
 title: "Panucci's Pizza"
 excerpt: "A pizza ordering system."
+permalink: /_portfolio/panuccispizza/
+
 header:
-  image: /assets/panuccispizza/pizza.png
+  image: /assets/panuccispizzascreenshots/pizza.png
 sidebar:
   - title: "Language"
     text: "Swift & SwiftUI"
@@ -12,11 +14,11 @@ sidebar:
     text: "2021"
     
 gallery:
-  - url: /assets/panuccispizza/pizza.png
-    image_path: assets/panuccispizza/pizza.png
+  - url: /assets/panuccispizzascreenshots/pizza.png
+    image_path: assets/panuccispizzascreenshots/pizza.png
     alt: "Menu screen"
-  - url: /assets/panuccispizza/checkout.png
-    image_path: assets/panuccispizza/checkout.png
+  - url: /assets/panuccispizzascreenshots/checkout.png
+    image_path: assets/panuccispizzascreenshots/checkout.png
     alt: "Checkout screen"
 ---
 

@@ -2,7 +2,7 @@ var store = [{
         "title": "Panucci's Pizza",
         "excerpt":"                                                                                        Screenshots       ","categories": [],
         "tags": [],
-        "url": "/portfolio/panuccispizza",
+        "url": "/_portfolio/panuccispizza/",
         "teaser": null
       },{
         "title": "Meddie",
