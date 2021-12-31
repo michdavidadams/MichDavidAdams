@@ -46,13 +46,13 @@ author:
           icon: "fab fa-fw fa-twitter"
           url: "https://twitter.com/michdavidadams"
         - label: "Xbox"
-          icon: "fab fa-fw fa-gamepad"
+          icon: "fab fa-fw fa-xbox"
           url: "https://live.xbox.com/Profile?Gamertag=RvhRoh"
         - label: "Steam"
           icon: "fab fa-fw fa-steam"
           url: "https://music.apple.com/profile/michdavidadams"
         - label: "Apple Music"
-          icon: "fab fa-fw fa-music"
+          icon: "fab fa-fw fa-apple"
           url: "https://music.apple.com/profile/michdavidadams"
           
 # Reading Files
