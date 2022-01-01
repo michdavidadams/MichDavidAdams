@@ -12,5 +12,5 @@ permalink: /
     <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
     <meta name="theme-color" content="#00bdff">
 ---
-### Github Streak
+
 [![GitHub Streak](https://githubstreakstats.herokuapp.com/?user=michdavidadams&theme=prussian)](https://git.io/streak-stats)
