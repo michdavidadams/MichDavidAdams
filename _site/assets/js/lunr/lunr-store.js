@@ -1,9 +1,15 @@
 var store = [{
+        "title": "Clicker",
+        "excerpt":"                                                  Screenshots       ","categories": [],
+        "tags": [],
+        "url": "/_portfolio/clicker/",
+        "teaser": "/assets/clicker/clicker.png"
+      },{
         "title": "Panucci's Pizza",
         "excerpt":"                                                                                        Screenshots       ","categories": [],
         "tags": [],
         "url": "/_portfolio/panuccispizza/",
-        "teaser": null
+        "teaser": "/assets/panuccispizza/pizza.png"
       },{
         "title": "Meddie",
         "excerpt":"My first time building an app was in 2019. I didn’t get very far, but it was fun building as much as I could before I simply needed to shelve it for later. I was building it using SwiftUI and I had only completed a single programming class (intro to...","categories": [],

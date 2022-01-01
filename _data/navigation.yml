@@ -1,5 +1,5 @@
 main:
  - title: "Portfolio"
-   url: /_pages/portfolio/
+   url: /portfolio/
  - title: "Posts"
    url: /_pages/year-archive/
