@@ -68,11 +68,11 @@ author:
           icon: "fab fa-fw fa-apple"
           url: "https://music.apple.com/profile/michdavidadams"
         - label: "Last.fm"
-            icon: "fab fa-fw fa-lastfm"
-            url: "https://www.last.fm/user/michdavidadams"
+          icon: "fab fa-fw fa-lastfm"
+          url: "https://www.last.fm/user/michdavidadams"
         - label: "Trakt"
-            icon: "fab fa-fw fa-trakt"
-            url: "https://trakt.tv/users/michdavidadams"
+          icon: "fab fa fa-tv-retro"
+          url: "https://trakt.tv/users/michdavidadams"
           
 # Reading Files
 include:
