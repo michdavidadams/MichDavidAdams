@@ -23,3 +23,6 @@ View your dog's progress towards their daily exercise goal and view their streak
 During a walk, workouts will automatically be paused when it detects you've stopped moving for a bit.
 
 {% include gallery caption="Screenshots" %}
+
+
+If you need help, email me@michdavidadams.com
