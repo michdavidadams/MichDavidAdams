@@ -20,7 +20,9 @@ Woof is a workout tracker that allows you to track your walks and playtime with 
 
 View your dog's progress towards their daily exercise goal and view their streak.
 
-During a walk, workouts will automatically be paused when it detects you've stopped moving for a bit.
+During a walk, workouts will automatically be paused when your watch detects you've stopped moving for a bit.
+
+Woof works with HealthKit to display your workout metrics and save your workouts.
 
 {% include gallery caption="Screenshots" %}
 
