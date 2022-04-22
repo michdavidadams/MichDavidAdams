@@ -28,3 +28,5 @@ Woof works with HealthKit to display your workout metrics and save your workouts
 
 
 If you need help, email me@michdavidadams.com
+
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/702200557?h=756f8d206d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Woof Workouts demonstration"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
