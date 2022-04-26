@@ -12,7 +12,7 @@ var store = [{
         "teaser": "/assets/panuccispizza/pizza.png"
       },{
         "title": "Woof",
-        "excerpt":"Support Privacy Policy Woof is a workout tracker that allows you to track your walks and playtime with your dog. View your dog’s progress towards their daily exercise goal and view their streak. During a walk, workouts will automatically be paused when your watch detects you’ve stopped moving for a...","categories": [],
+        "excerpt":"Support         Privacy Policy Woof is a workout tracker that allows you to track your walks and playtime with your dog. View your dog’s progress towards their daily exercise goal and view their streak. During a walk, workouts will automatically be paused when your watch detects you’ve...","categories": [],
         "tags": [],
         "url": "/_portfolio/woof/",
         "teaser": "/assets/woof/WoofHeader.png"
