@@ -40,4 +40,10 @@ var store = [{
         "tags": ["apps"],
         "url": "/2021/12/21/makingpanuccispizza.html",
         "teaser": null
+      },{
+        "title": "Woof: Streak",
+        "excerpt":"Tracking the streak of a user’s daily exercise seems easy, but I struggled a lot with it. I wanted a simple way to implement it without having to store a bunch of data and comb through it. I used UserDefaults to store and read the data. There’s probably an easier...","categories": [],
+        "tags": ["apps, woof"],
+        "url": "/2022/04/28/woof-streak.html",
+        "teaser": null
       }]
